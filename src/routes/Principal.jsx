@@ -10,7 +10,7 @@ export default function Principal() {
     <main>
         <section className="c-apresentacao">
             <img src={agendamento} alt="Imagem principal de agendamento" />
-            <div>
+            <div className="c-apresentacao-texto">
                 <h2>PONTO +</h2>
                 <p>Aplicativo simples e intuitivo que busca facilitar a processo de solicitação de exames, simplificando a comunicação entre os usuários e os locais de exame, tanto conveniados quanto clínicas particulares.</p>
             </div>
@@ -32,7 +32,8 @@ export default function Principal() {
         </section>
         <section className="c-vantagens">
             <h3>VANTAGENS</h3>
-            <div>
+            <div className="c-vantagens-div">
+            <div className="c-vantagens-div-interna">
                 <div>
                     <img src={relogio} alt="" />
                 </div>
@@ -41,7 +42,7 @@ export default function Principal() {
                     <p>Com nosso aplicativo, o usuário pode economizar tempo, uma vez que não precisa fazer diversas ligações e pesquisas por clínicas para poder marcar um agendamento. Todas as informações e opções disponíveis estão centralizadas e unificadas na Ponto +.</p>
                 </div>
             </div>
-            <div>
+            <div className="c-vantagens-div-interna">
                 <div>
                     <img src={video} alt="" />
                 </div>
@@ -50,7 +51,7 @@ export default function Principal() {
                     <p>Com o intuito de promover maior acessibilidade, principalmente a idosos, será disponibilizado um vídeo de tutorial de como utilizar nossa aplicação. Este estará disponível a quaaluqer momento para quem precisar de ajuda.</p>
                 </div>
             </div>
-            <div>
+            <div className="c-vantagens-div-interna">
                 <div>
                     <img src={conversa} alt="" />
                 </div>
@@ -58,6 +59,7 @@ export default function Principal() {
                     <h3>COMUNICAÇÃO FACILITADA</h3>
                     <p>Além de facilitar o agendamento, buscamos facilitar a comunicação entre as clínicas e os usuários. Nosso aplicativo contará com chats para que os futuros pacientes e os locais de exame possam conversar e esclarecer dúvidas.</p>
                 </div>
+            </div>
             </div>
         </section>
         </main>

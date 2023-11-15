@@ -1,21 +1,54 @@
 main {
     display: grid;
+    margin: 1rem;
+    padding: 1.8rem;
+    gap: 2rem;
     grid-template-areas: 
     "apresentacao apresentacao apresentacao solucao solucao"
     "apresentacao apresentacao apresentacao solucao solucao"
     "apresentacao apresentacao apresentacao solucao solucao"
     "vantagens vantagens vantagens vantagens vantagens"
-    
-    
     ;
+
+    
 }
 
 .c-apresentacao {
     grid-area: apresentacao;
+    display: flex;
+    flex-direction: column;
+    img {
+        max-width: 100%;
+    }
+    .c-apresentacao-texto {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
 }
 .c-solucao {
     grid-area: solucao;
+    display: flex;
+    border: 2px solid #db6565;
+    align-self: center;
+    flex-direction: column;
+    div {
+        border: 2px solid #db6565;
+    }
 }
 .c-vantagens {
     grid-area: vantagens;
+    .c-vantagens-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .c-vantagens-div-interna {
+            display: flex;
+            align-self: center;
+            align-items: center;
+            img {
+                width: 70%;
+            }
+        }
+    }
 }
