@@ -1,4 +1,7 @@
 import Cabecalho from "./components/Cabecalho"
+import Rodape from "./components/Rodape"
+import Principal from "./routes/Principal"
+
 
 
 function App() {
@@ -6,6 +9,8 @@ function App() {
   return (
     <>
      <Cabecalho/>
+     <Principal/>
+     <Rodape/>
     </>
   )
 }

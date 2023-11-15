@@ -1,0 +1,21 @@
+main {
+    display: grid;
+    grid-template-areas: 
+    "apresentacao apresentacao apresentacao solucao solucao"
+    "apresentacao apresentacao apresentacao solucao solucao"
+    "apresentacao apresentacao apresentacao solucao solucao"
+    "vantagens vantagens vantagens vantagens vantagens"
+    
+    
+    ;
+}
+
+.c-apresentacao {
+    grid-area: apresentacao;
+}
+.c-solucao {
+    grid-area: solucao;
+}
+.c-vantagens {
+    grid-area: vantagens;
+}

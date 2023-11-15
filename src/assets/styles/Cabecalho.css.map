@@ -1,1 +1,1 @@
-{"version":3,"sources":["Cabecalho.scss","Cabecalho.css"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,yBAAA;EACA,iBAAA;ACCJ;;ADGA;EACI,aAAA;EACA,6BAAA;EACA,gBAAA;EACA,mBAAA;ACAJ","file":"Cabecalho.css"}
+{"version":3,"sources":["Cabecalho.scss","Cabecalho.css"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,yBAAA;EACA,iBAAA;ACCJ;ADAI;EACI,aAAA;EACA,6BAAA;EACA,gBAAA;EACA,mBAAA;ACER","file":"Cabecalho.css"}
