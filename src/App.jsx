@@ -1,6 +1,6 @@
 import Cabecalho from "./components/Cabecalho"
 import Rodape from "./components/Rodape"
-import Principal from "./routes/Principal"
+import { Outlet } from 'react-router-dom'
 
 
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
      <Cabecalho/>
-     <Principal/>
+     <Outlet/>
      <Rodape/>
     </>
   )
