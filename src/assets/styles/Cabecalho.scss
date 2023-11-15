@@ -10,3 +10,10 @@ nav {
     }
 }
 
+@media screen and (max-width: 735px){
+    li {
+        display: none;
+        padding: 1rem 0;
+    }
+}
+

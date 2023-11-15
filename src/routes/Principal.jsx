@@ -31,7 +31,7 @@ export default function Principal() {
             </div>
         </section>
         <section className="c-vantagens">
-            <h3>VANTAGENS</h3>
+            <h3 id="vantagens-titulo">VANTAGENS</h3>
             <div className="c-vantagens-div">
             <div className="c-vantagens-div-interna">
                 <div>
