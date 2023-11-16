@@ -1,8 +1,19 @@
-.form {
+fieldset {
+  border: none;
+}
+
+legend {
+  color: #db6565;
+  font-weight: bolder;
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+form {
   width: 520px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   margin-left: 30%;
   margin-top: 10%;
   border: 2px solid #db6565;
@@ -13,8 +24,7 @@
   border-radius: 15px;
   margin-bottom: 15%;
 }
-
-.form input {
+form input {
   width: 100%;
   display: inline-block;
   position: relative;
@@ -26,14 +36,18 @@
   color: black;
   font-size: 20px;
 }
-
-.form input:focus {
+form input:focus {
   background: #db6565;
   color: black;
+}
+form label {
+  color: #db6565;
+  font-weight: bold;
 }
 
 button {
   padding: 12.5px 30px;
+  margin-top: 30px;
   border: 0;
   border-radius: 100px;
   background-color: #db6565;
@@ -58,34 +72,34 @@ button:active {
 }
 
 @media screen and (max-width: 768px) {
-  .form {
+  form {
     width: 90%;
     margin-left: 5%;
     font-size: 16px;
   }
-  .form input {
+  form input {
     width: 100%;
     font-size: 16px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .form {
+  form {
     width: 70%;
     margin-left: 15%;
     font-size: 18px;
   }
-  .form .form input {
+  form form input {
     width: 100%;
     font-size: 18px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) and (min-width: 1025px) {
-  .form {
+  form {
     width: 520px;
     margin-left: 28%;
     font-size: 20px;
   }
-  .form input {
+  form input {
     width: 500px;
     font-size: 20px;
   }
