@@ -2,7 +2,8 @@
     "users": [
       {
         "email": "mirella@fiap.com.br",
-        "fullName": "Mirella imenez",
+        "name": "Mirella ",
+        "lastName": "Imenez",
         "username": "miimenez",
         "password": "1234",
         "id": 1

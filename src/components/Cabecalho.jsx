@@ -1,19 +1,47 @@
-import "../assets/styles/Cabecalho.css"
+import "../assets/styles/Cabecalho.css";
+import { useState, useEffect } from "react";
 
 export default function Cabecalho() {
-  return (
-    <>
-    <header>
 
-      <nav>
-        <ul>
-            <h1>FL</h1>
-            <li>Global Solution - Engenharia de Software</li>
-            {/* <li><Link to="/login" className={rotaAtual.pathname == "/login" ? "active" : "" }>LOGIN</Link></li> */}
-        </ul>
-      </nav>
+  const userLogado = JSON.parse(sessionStorage.getItem("user-object"));
+  const [user] = useState(userLogado);
 
-    </header> 
-    </>
-  );
+  const handleLogout = () => {
+    sessionStorage.removeItem("user-object");
+    sessionStorage.removeItem("token-user");
+    window.location = "/";
+  };
+
+  if (sessionStorage.getItem("token-user")) {
+    return (
+      <>
+        <header>
+          <nav>
+            <ul>
+              <h1>FL</h1>
+              <div>
+                <p>Olá {user.name}</p>
+                <p>{user.email}</p>
+              </div>
+              <li>Global Solution - Engenharia de Software</li>
+              <button onClick={handleLogout}>LOGOUT</button>
+            </ul>
+          </nav>
+        </header>
+      </>
+    );
+  } else {
+    return (
+      <>
+        <header>
+          <nav>
+            <ul>
+              <h1>FL</h1>
+              <li>Global Solution - Engenharia de Software</li>
+            </ul>
+          </nav>
+        </header>
+      </>
+    );
+  }
 }
