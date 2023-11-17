@@ -24,7 +24,7 @@ export default function Cabecalho() {
                 <p>{user.email}</p>
               </div>
               <li>Global Solution - Engenharia de Software</li>
-              <button onClick={handleLogout}>LOGOUT</button>
+              <button onClick={handleLogout} className="botao-log">LOGOUT</button>
             </ul>
           </nav>
         </header>
