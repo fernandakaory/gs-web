@@ -1,12 +1,28 @@
 {
     "users": [
       {
-        "email": "mirella@fiap.com.br",
-        "name": "Mirella ",
-        "lastName": "Imenez",
-        "username": "miimenez",
+        "email": "lana@fiap.com.br",
+        "name": "Lana",
+        "lastName": "Auada",
+        "username": "lana11",
         "password": "1234",
         "id": 1
+      },
+      {
+        "email": "fer@fiap.com.br",
+        "name": "Fernanda",
+        "lastName": "Saito",
+        "username": "fefe",
+        "password": "241123",
+        "id": 2
+      },
+      {
+        "email": "user1@fiap.com.br",
+        "name": "Usuário",
+        "lastName": "Sobrenome",
+        "username": "user1",
+        "password": "456789",
+        "id": 3
       }
     ]
   }
