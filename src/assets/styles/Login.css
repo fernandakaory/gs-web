@@ -22,7 +22,7 @@ form {
   text-align: center;
   font-size: 20px;
   border-radius: 15px;
-  margin-bottom: 15%;
+  margin-bottom: 15rem;
 }
 form input {
   width: 100%;
@@ -76,6 +76,7 @@ button:active {
     width: 90%;
     margin-left: 5%;
     font-size: 16px;
+    margin-bottom: 18rem;
   }
   form input {
     width: 100%;
@@ -87,6 +88,7 @@ button:active {
     width: 70%;
     margin-left: 15%;
     font-size: 18px;
+    margin-bottom: 20rem;
   }
   form form input {
     width: 100%;
@@ -98,6 +100,7 @@ button:active {
     width: 520px;
     margin-left: 28%;
     font-size: 20px;
+    margin-bottom: 20rem;
   }
   form input {
     width: 500px;
