@@ -9,6 +9,12 @@ nav ul {
   list-style: none;
   align-items: center;
 }
+nav ul h1 {
+  color: #fff;
+}
+nav ul p {
+  color: #fff;
+}
 
 @media screen and (max-width: 735px) {
   li {
