@@ -1,10 +1,7 @@
 import "../assets/styles/Login.css";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 
 function Login() {
-  //definindo váriaveis de aviso de do status da operação de login
-    const [msgStatus, setMsgstatus] = useState('');
-    const [classStatus, setClassStatus] = useState('');
 
   //va´riaveis dos inputs
     const [username, setUsername] = useState('');
@@ -20,19 +17,10 @@ function Login() {
       }
     };
 
-    useEffect(() => {
 
-      if(msgStatus == "Login realizado com SUCESSO!!"){
-          setClassStatus("login-sucesso");
-      }else if(msgStatus == "Usuário e ou Senha incorretos!"){
-        setClassStatus("login-erro");
-      }else{
-        setClassStatus("login");
-      }
-  }, [msgStatus])
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
 
     let user;
 
@@ -53,32 +41,23 @@ function Login() {
       }
       if (user) {
 
-        setMsgstatus("Login realizado com SUCESSO!!");
+        alert("Login realizado com SUCESSO!!");
         
 
         const token = Math.random().toString(16).substring(2) + Math.random().toString(16).substring(2);
-
         sessionStorage.setItem("token-user", token);
-
         sessionStorage.setItem("user-object", JSON.stringify(user));
 
-        setTimeout(()=>{
-            window.location = "/solucao";
-          },3000);
-        
+        window.location = "/solucao";
       } else {
 
-        setMsgstatus("Usuário e ou Senha incorretos!");
+        alert("Usuário e ou Senha incorretos!");
           
-        setTimeout(()=>{
-
-          setMsgstatus("");
-
           setUsername("");
           setPassword("");
 
-            window.location = "/";
-          },3000);
+          window.location = "/";
+        
         
       }
     } catch (error) {
@@ -86,14 +65,8 @@ function Login() {
     }
   };
 
-
-
-
-
-
   return (
     <>
-    <h2 className={classStatus}>{msgStatus}</h2>
       <form className="form" onSubmit={handleSubmit}>
         <fieldset>
           <legend>LOGIN</legend>
