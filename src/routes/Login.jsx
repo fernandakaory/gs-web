@@ -3,7 +3,7 @@ import { useState} from "react";
 
 function Login() {
 
-  //va´riaveis dos inputs
+  //variáveis dos inputs
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
