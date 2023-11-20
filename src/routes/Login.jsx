@@ -28,7 +28,7 @@ function Login() {
       const response = await fetch("http://localhost:5000/users");
       if (response.ok) {
         const users = await response.json();
-        // console.log(users);
+        //console.log(users);
         for (let i = 0; i < users.length; i++) {
           const usuario = users[i];
 
@@ -51,7 +51,7 @@ function Login() {
         window.location = "/solucao";
       } else {
 
-        alert("Usuário e ou Senha incorretos!");
+        alert("Usuário e ou senha incorretos!");
           
           setUsername("");
           setPassword("");
