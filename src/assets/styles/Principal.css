@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Caprasimo&family=Handjet:wght@300&family=Kdam+Thmor+Pro&display=swap");
+:root {
+  --cor-secundaria:#db6565;
+}
+
 main {
   overflow: hidden;
   display: grid;
@@ -27,6 +32,9 @@ main {
 .c-apresentacao .c-apresentacao-texto h2 {
   text-align: center;
   width: 40%;
+  color: var(--cor-secundaria);
+  font-size: 2.5rem;
+  font-family: "Kdam Thmor Pro", sans-serif;
 }
 .c-apresentacao .c-apresentacao-texto p {
   text-align: left;
@@ -40,10 +48,13 @@ main {
   flex-direction: column;
 }
 .c-solucao div {
-  border: 2px solid #db6565;
+  border: 2px solid var(--cor-secundaria);
   padding: 1rem;
   width: 100%;
   font-size: 14px;
+}
+.c-solucao div h3 {
+  text-align: center;
 }
 
 .c-vantagens {
@@ -51,6 +62,8 @@ main {
 }
 .c-vantagens #vantagens-titulo {
   text-align: center;
+  color: var(--cor-secundaria);
+  font-size: 1.8rem;
 }
 .c-vantagens .c-vantagens-div {
   display: flex;
