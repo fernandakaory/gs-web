@@ -4,6 +4,7 @@ import relogio from '../assets/img/time.png'
 import video from '../assets/img/video.png'
 import conversa from '../assets/img/talk.png'
 
+//página de apresentação da marca
 export default function Principal() {
   return (
     <>
@@ -48,7 +49,7 @@ export default function Principal() {
                 </div>
                 <div>
                     <h3>TUTORIAL EM VÍDEO</h3>
-                    <p>Com o intuito de promover maior acessibilidade, principalmente a idosos, será disponibilizado um vídeo de tutorial de como utilizar nossa aplicação. Este estará disponível a quaaluqer momento para quem precisar de ajuda.</p>
+                    <p>Com o intuito de promover maior acessibilidade, principalmente a idosos, será disponibilizado um vídeo de tutorial de como utilizar nossa aplicação. Este estará disponível a qualquer momento para quem precisar de ajuda.</p>
                 </div>
             </div>
             <div className="c-vantagens-div-interna">
