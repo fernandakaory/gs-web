@@ -8,7 +8,7 @@ function Login() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
-    //capturando valores dos inputs
+    //capturando os valores dos inputs
     const handleChange = async(event) => {
       const { name, value } = event.target;
       if (name === 'username') {
