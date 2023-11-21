@@ -9,7 +9,7 @@ Global Solution - Ponto +
 
 ## Instruções de uso
 <p>Para usar a API é necessário a utilização do comando "npm run usuarios"</p>
-A primeira página é a de login, ou seja, só será possível vizualizar a página da solução depois da autenticação. Por este motivo, abaixo se encontram os usuários criados para realizar o processo de login:
+A primeira página é a de login, ou seja, só será possível visualizar a página da solução depois da autenticação. Por este motivo, abaixo se encontram os usuários criados para realizar o processo de login:
 <h3>Usuário 1</h3>
 <p>Nome de usuário: "lana11"</p>
 <p>Senha: "1234"</p>
