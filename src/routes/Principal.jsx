@@ -1,4 +1,4 @@
-import "../assets/styles/principal/Principal.css"
+import "../assets/styles/Principal.scss"
 import agendamento from '../assets/img/agendamento.jpg'
 import relogio from '../assets/img/time.png'
 import video from '../assets/img/video.png'
