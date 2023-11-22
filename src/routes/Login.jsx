@@ -27,7 +27,6 @@ function Login() {
       const response = await fetch("http://localhost:5000/users");
       if (response.ok) {
         const users = await response.json();
-        // console.log(users);
         for (let i = 0; i < users.length; i++) {
           const usuario = users[i];
 
@@ -40,8 +39,7 @@ function Login() {
       }
       if (user) {
 
-        alert("Login realizado com SUCESSO!!");
-        
+        alert("Login bem sucedido!!");
 
         const token = Math.random().toString(16).substring(2) + Math.random().toString(16).substring(2);
         sessionStorage.setItem("token-user", token);
@@ -50,7 +48,7 @@ function Login() {
         window.location = "/solucao";
       } else {
 
-        alert("Usuário e ou Senha incorretos!");
+        alert("Usuário e/ou Senha incorretos!!");
           
           setUsername("");
           setPassword("");
