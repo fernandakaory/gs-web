@@ -1,4 +1,4 @@
-import '../assets/styles/Rodape.css'
+import '../assets/styles/rodape/Rodape.css'
 
 export default function Rodape() {
   return (

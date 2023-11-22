@@ -1,4 +1,4 @@
-import "../assets/styles/Login.css";
+import "../assets/styles/login/Login.css";
 import { useState} from "react";
 
 function Login() {
