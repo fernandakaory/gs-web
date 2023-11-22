@@ -5,7 +5,7 @@ import Erro404 from './routes/Error404.jsx'
 import GlobalStyle from './assets/styles/EstiloGlobal.jsx'
 
 
-// 1- Configurando o Router
+// 1 - configurando o router
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from './routes/Login.jsx'
 import Principal from './routes/Principal.jsx'
