@@ -1,4 +1,4 @@
-import "../assets/styles/login/Login.css";
+import "../assets/styles/Login.scss";
 import { useState} from "react";
 
 function Login() {
@@ -16,7 +16,6 @@ function Login() {
         setPassword(value);
       }
     };
-
 
 
   const handleSubmit = async (event) => {

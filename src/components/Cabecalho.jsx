@@ -1,4 +1,4 @@
-import "../assets/styles/cabecalho/Cabecalho.css";
+import "../assets/styles/Cabecalho.scss";
 import { useState, useEffect } from "react";
 
 export default function Cabecalho() {
