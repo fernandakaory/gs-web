@@ -20,11 +20,12 @@ function Login() {
 
 
   const handleSubmit = async (event) => {
-    event.preventDefault();
-
-    let user;
 
     try {
+      event.preventDefault();
+
+      let user;
+
       const response = await fetch("http://localhost:5000/users");
       if (response.ok) {
         const users = await response.json();
@@ -49,37 +50,34 @@ function Login() {
 
         window.location = "/solucao";
       } else {
-
-        alert("Usuário e/ou Senha incorretos!!");
-          
-          setUsername("");
-          setPassword("");
-
-          window.location = "/";
-        
-        
+        throw new Error("Usuário e/ou Senha incorretos!!"); 
       }
     } catch (error) {
       console.log(error);
+      alert(error.message)
+      setUsername("");
+      setPassword("");
     }
   };
 
   return (
     <>
-      <form className="form" onSubmit={handleSubmit}>
-        <fieldset>
-          <legend>LOGIN</legend>
-          <label>
-            Nome de usuário:
-            <input type="text" name="username" value={username} onChange={handleChange} required />
-          </label>
-          <label>
-            Senha:
-            <input type="password" name="password" value={password} onChange={handleChange} required />
-          </label>
-          <button type="submit">Entrar</button>
-        </fieldset>
-      </form>
+      <div className="divForm">
+        <form className="form" onSubmit={handleSubmit}>
+          <fieldset>
+            <legend>LOGIN</legend>
+            <label>
+              Nome de usuário:
+              <input type="text" name="username" value={username} onChange={handleChange} required />
+            </label>
+            <label>
+              Senha:
+              <input type="password" name="password" value={password} onChange={handleChange} required />
+            </label>
+            <button type="submit">Entrar</button>
+          </fieldset>
+        </form>
+      </div>
     </>
   );
 }
