@@ -1,8 +1,12 @@
 import "../assets/styles/Login.scss";
-import { useState} from "react";
+import { useEffect, useState} from "react";
 
 //página de login
 function Login() {
+
+  useEffect(() => {
+    document.title = 'Ponto + | Login';
+  },[])
 
   //variáveis dos inputs
     const [username, setUsername] = useState('');

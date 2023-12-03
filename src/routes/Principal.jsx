@@ -3,9 +3,14 @@ import agendamento from '../assets/img/agendamento.jpg'
 import relogio from '../assets/img/time.png'
 import video from '../assets/img/video.png'
 import conversa from '../assets/img/talk.png'
+import { useEffect } from "react";
 
 //página de apresentação da marca
 export default function Principal() {
+    useEffect(() => {
+        document.title = 'Ponto + | Solução';
+      },[])
+    
   return (
     <>
     <main>
